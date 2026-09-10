@@ -1,0 +1,921 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>电料批发市场-专业电工电气产品采购与市场指南</title>
+    <meta name="description" content="电料批发市场综合信息平台，提供电线电缆、开关插座、断路器、照明灯具、配电箱等各类电料产品的批发采购指南、市场分布介绍、选购技巧与价格参考，助力专业采购与工程配套。">
+    <meta name="keywords" content="电料批发市场,电料批发,电工电气,电线电缆批发,开关插座批发,断路器,照明灯具,配电箱,五金电料,采购指南">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Microsoft YaHei", "PingFang SC", "Helvetica Neue", Arial, sans-serif;
+            background-color: #f4f7f9;
+            color: #2c3e50;
+            line-height: 1.6;
+        }
+
+        a {
+            text-decoration: none;
+            color: #1a5276;
+            transition: color 0.2s ease;
+        }
+
+        a:hover {
+            color: #e67e22;
+        }
+
+        .container {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header */
+        .site-header {
+            background: linear-gradient(135deg, #1b2a41, #1c3b5a);
+            padding: 20px 0;
+            border-bottom: 3px solid #f39c12;
+        }
+
+        .header-wrapper {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .logo-area h1 {
+            font-size: 28px;
+            color: #ffffff;
+            font-weight: 700;
+            letter-spacing: 1px;
+        }
+
+        .logo-area h1 span {
+            color: #f39c12;
+        }
+
+        .logo-area p {
+            color: #9dc1e0;
+            font-size: 14px;
+            margin-top: 4px;
+        }
+
+        .header-contact {
+            color: #d5e8f5;
+            font-size: 15px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            gap: 5px;
+        }
+
+        .header-contact strong {
+            color: #f39c12;
+            font-size: 18px;
+        }
+
+        /* Navigation */
+        .main-nav {
+            background-color: #ffffff;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .main-nav ul {
+            display: flex;
+            flex-wrap: wrap;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .main-nav ul li {
+            position: relative;
+        }
+
+        .main-nav ul li a {
+            display: block;
+            padding: 14px 22px;
+            font-weight: 600;
+            color: #2c3e50;
+            border-bottom: 3px solid transparent;
+            transition: all 0.2s;
+        }
+
+        .main-nav ul li a:hover,
+        .main-nav ul li a.active {
+            color: #e67e22;
+            border-bottom-color: #f39c12;
+            background-color: #fdfaf5;
+        }
+
+        /* Hero / 市场速览 */
+        .market-hero {
+            background: linear-gradient(to right, #e8edf2, #f9fbfd);
+            padding: 45px 0;
+            border-bottom: 1px solid #dce5ec;
+        }
+
+        .hero-grid {
+            display: grid;
+            grid-template-columns: 1.2fr 0.8fr;
+            gap: 35px;
+            align-items: center;
+        }
+
+        .hero-copy h2 {
+            font-size: 30px;
+            color: #1b2a41;
+            margin-bottom: 15px;
+            line-height: 1.3;
+        }
+
+        .hero-copy h2 em {
+            font-style: normal;
+            color: #e67e22;
+        }
+
+        .hero-copy p {
+            font-size: 16px;
+            color: #34495e;
+            margin-bottom: 12px;
+        }
+
+        .hero-stats {
+            display: flex;
+            gap: 25px;
+            margin-top: 25px;
+            flex-wrap: wrap;
+        }
+
+        .stat-item {
+            background: white;
+            padding: 12px 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+            border-left: 4px solid #f39c12;
+        }
+
+        .stat-item .num {
+            font-size: 24px;
+            font-weight: 700;
+            color: #1b2a41;
+        }
+
+        .stat-item .label {
+            font-size: 13px;
+            color: #6b7f8f;
+        }
+
+        .hero-card {
+            background: white;
+            border-radius: 12px;
+            padding: 25px;
+            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.07);
+            border-top: 4px solid #f39c12;
+        }
+
+        .hero-card h3 {
+            font-size: 18px;
+            margin-bottom: 15px;
+            color: #1b2a41;
+        }
+
+        .hot-keywords {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-bottom: 15px;
+        }
+
+        .hot-keywords a {
+            background: #ecf0f1;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 13px;
+            color: #2c3e50;
+            border: 1px solid #d5dbdb;
+        }
+
+        .hot-keywords a:hover {
+            background: #f39c12;
+            color: white;
+            border-color: #f39c12;
+        }
+
+        .card-note {
+            font-size: 13px;
+            color: #7f8c8d;
+            border-top: 1px solid #ecf0f1;
+            padding-top: 12px;
+        }
+
+        /* 分类板块 */
+        .category-section {
+            padding: 50px 0;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 35px;
+        }
+
+        .section-title h2 {
+            font-size: 28px;
+            color: #1b2a41;
+            display: inline-block;
+            border-bottom: 3px solid #f39c12;
+            padding-bottom: 8px;
+        }
+
+        .section-title p {
+            color: #5d6d7e;
+            margin-top: 12px;
+            font-size: 15px;
+        }
+
+        .category-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 20px;
+        }
+
+        .category-card {
+            background: white;
+            border-radius: 10px;
+            padding: 22px 15px;
+            text-align: center;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.04);
+            transition: transform 0.2s, box-shadow 0.2s;
+            border: 1px solid #eef2f5;
+        }
+
+        .category-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 18px rgba(0, 0, 0, 0.08);
+        }
+
+        .category-icon {
+            font-size: 38px;
+            margin-bottom: 12px;
+        }
+
+        .category-card h3 {
+            font-size: 17px;
+            margin-bottom: 8px;
+            color: #1b2a41;
+        }
+
+        .category-card p {
+            font-size: 13px;
+            color: #6b7f8f;
+        }
+
+        /* 市场推荐区域 */
+        .featured {
+            background-color: #ffffff;
+            padding: 50px 0;
+        }
+
+        .featured-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 25px;
+        }
+
+        .product-item {
+            background: #f9fbfd;
+            border-radius: 10px;
+            padding: 18px;
+            border-left: 5px solid #2980b9;
+            transition: background 0.2s;
+        }
+
+        .product-item:hover {
+            background: #f0f5fa;
+        }
+
+        .product-item h3 {
+            font-size: 17px;
+            margin-bottom: 6px;
+            color: #1b2a41;
+        }
+
+        .product-item .spec {
+            font-size: 14px;
+            color: #5d6d7e;
+            margin-bottom: 8px;
+        }
+
+        .product-item .ref {
+            font-size: 13px;
+            color: #2980b9;
+        }
+
+        /* 采购指南 */
+        .guide-section {
+            padding: 50px 0;
+        }
+
+        .guide-layout {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+        }
+
+        .guide-text h3 {
+            font-size: 22px;
+            margin-bottom: 20px;
+            color: #1b2a41;
+        }
+
+        .guide-list {
+            list-style: none;
+            margin-bottom: 25px;
+        }
+
+        .guide-list li {
+            padding: 12px 0;
+            border-bottom: 1px dashed #d5dbdb;
+            display: flex;
+            gap: 12px;
+        }
+
+        .guide-list li::before {
+            content: "✔";
+            color: #e67e22;
+            font-weight: bold;
+            flex-shrink: 0;
+        }
+
+        .guide-tip {
+            background: #fef9e7;
+            border-left: 4px solid #f39c12;
+            padding: 18px;
+            border-radius: 0 8px 8px 0;
+        }
+
+        /* 市场分布 */
+        .market-map-section {
+            background: #eef3f7;
+            padding: 50px 0;
+        }
+
+        .market-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+            gap: 20px;
+        }
+
+        .market-region {
+            background: white;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.03);
+        }
+
+        .market-region h3 {
+            font-size: 18px;
+            margin-bottom: 12px;
+            color: #1b2a41;
+            padding-bottom: 8px;
+            border-bottom: 2px solid #f39c12;
+            display: inline-block;
+        }
+
+        .market-region ul {
+            list-style: none;
+        }
+
+        .market-region ul li {
+            padding: 6px 0;
+            font-size: 14px;
+            color: #34495e;
+            border-bottom: 1px dotted #e5e8e8;
+        }
+
+        .market-region ul li:last-child {
+            border-bottom: none;
+        }
+
+        /* FAQ */
+        .faq-section {
+            padding: 50px 0;
+        }
+
+        .faq-list {
+            max-width: 850px;
+            margin: 0 auto;
+        }
+
+        .faq-item {
+            background: white;
+            border-radius: 8px;
+            padding: 20px 25px;
+            margin-bottom: 15px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.03);
+            border-left: 4px solid #2980b9;
+        }
+
+        .faq-item h3 {
+            font-size: 17px;
+            margin-bottom: 8px;
+            color: #1b2a41;
+        }
+
+        .faq-item p {
+            font-size: 15px;
+            color: #455a64;
+        }
+
+        /* CTA 区域 */
+        .cta-banner {
+            background: linear-gradient(135deg, #1b2a41, #2c3e50);
+            padding: 40px 0;
+            text-align: center;
+            color: white;
+        }
+
+        .cta-banner h2 {
+            font-size: 26px;
+            margin-bottom: 10px;
+        }
+
+        .cta-banner p {
+            color: #bdc3c7;
+            margin-bottom: 20px;
+        }
+
+        .cta-btn {
+            display: inline-block;
+            background: #f39c12;
+            color: white;
+            padding: 12px 35px;
+            border-radius: 30px;
+            font-weight: 600;
+            font-size: 16px;
+            transition: background 0.2s;
+        }
+
+        .cta-btn:hover {
+            background: #e67e22;
+            color: white;
+        }
+
+        /* Footer */
+        .site-footer {
+            background: #1b2a41;
+            color: #b0bec5;
+            padding: 35px 0 25px;
+            font-size: 14px;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 30px;
+            margin-bottom: 25px;
+        }
+
+        .footer-col h4 {
+            color: white;
+            font-size: 16px;
+            margin-bottom: 15px;
+        }
+
+        .footer-col ul {
+            list-style: none;
+        }
+
+        .footer-col ul li {
+            padding: 4px 0;
+        }
+
+        .footer-col ul li a {
+            color: #b0bec5;
+        }
+
+        .footer-col ul li a:hover {
+            color: #f39c12;
+        }
+
+        .copyright {
+            border-top: 1px solid #2c3e50;
+            padding-top: 18px;
+            text-align: center;
+            color: #7f8c8d;
+        }
+
+        /* 响应式 */
+        @media (max-width: 992px) {
+            .hero-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .guide-layout {
+                grid-template-columns: 1fr;
+            }
+
+            .header-contact {
+                align-items: flex-start;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .main-nav ul {
+                justify-content: center;
+            }
+
+            .main-nav ul li a {
+                padding: 12px 14px;
+                font-size: 14px;
+            }
+
+            .logo-area h1 {
+                font-size: 22px;
+            }
+
+            .section-title h2 {
+                font-size: 23px;
+            }
+
+            .hero-copy h2 {
+                font-size: 24px;
+            }
+
+            .cta-banner h2 {
+                font-size: 22px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .category-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .header-wrapper {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .hero-stats {
+                flex-direction: column;
+                gap: 12px;
+            }
+        }
+    </style>
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+
+<header class="site-header">
+    <div class="container header-wrapper">
+        <div class="logo-area">
+            <h1>⚡ 电料<span>批发</span>市场</h1>
+            <p>专业电工电气产品采购与市场信息平台</p>
+        </div>
+        <div class="header-contact">
+            <span>全国服务热线</span>
+            <strong>400-800-6600</strong>
+            <span>周一至周六 8:30-18:00</span>
+        </div>
+    </div>
+</header>
+
+<nav class="main-nav">
+    <div class="container">
+        <ul>
+            <li><a href="#" class="active">首页</a></li>
+            <li><a href="#">产品分类</a></li>
+            <li><a href="#">市场行情</a></li>
+            <li><a href="#">批发指南</a></li>
+            <li><a href="#">品牌专区</a></li>
+            <li><a href="#">工程配套</a></li>
+            <li><a href="#">资讯动态</a></li>
+            <li><a href="#">关于我们</a></li>
+        </ul>
+    </div>
+</nav>
+
+<main>
+    <!-- Hero 区域 -->
+    <section class="market-hero">
+        <div class="container hero-grid">
+            <div class="hero-copy">
+                <h2>一站式<em>电料批发市场</em>综合服务 · 源头采购更省心</h2>
+                <p>覆盖电线电缆、开关插座、照明灯具、断路器、配电箱、电工辅料等全品类电料产品。汇聚多家源头厂商与区域批发商，为装修公司、工程承包商、五金门店及个人用户提供集中采购和比价参考。</p>
+                <p>无论您是需要大批量工程配货，还是日常维修零采，都能在这里找到适合的渠道与产品信息。</p>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <div class="num">6大</div>
+                        <div class="label">核心产品类别</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="num">200+</div>
+                        <div class="label">合作品牌与厂商</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="num">30+</div>
+                        <div class="label">区域批发市场分布</div>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-card">
+                <h3>🔥 热门采购搜索</h3>
+                <div class="hot-keywords">
+                    <a href="#">国标电线</a>
+                    <a href="#">阻燃电缆</a>
+                    <a href="#">空气开关</a>
+                    <a href="#">漏电保护器</a>
+                    <a href="#">LED平板灯</a>
+                    <a href="#">五孔插座</a>
+                    <a href="#">配电箱</a>
+                    <a href="#">PVC线管</a>
+                    <a href="#">电缆桥架</a>
+                    <a href="#">防水胶布</a>
+                </div>
+                <div class="card-note">
+                    💡 提示：批量采购前建议对比2-3家报价，并确认产品是否具备3C认证及质保服务。
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 产品分类 -->
+    <section class="category-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>电料产品分类</h2>
+                <p>覆盖市场主流电料品类，支持多种采购需求</p>
+            </div>
+            <div class="category-grid">
+                <div class="category-card">
+                    <div class="category-icon">🔌</div>
+                    <h3>电线电缆</h3>
+                    <p>BV/BVR/RVV/YJV等型号 · 国标足米</p>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon">🎛️</div>
+                    <h3>开关插座</h3>
+                    <p>墙壁开关 · 插座面板 · 地脚插 · 防水盒</p>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon">⚡</div>
+                    <h3>断路器</h3>
+                    <p>空气开关 · 漏电保护 · 隔离开关</p>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon">💡</div>
+                    <h3>照明灯具</h3>
+                    <p>LED球泡 · 工矿灯 · 筒灯 · 灯带</p>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon">🗄️</div>
+                    <h3>配电箱</h3>
+                    <p>强电箱 · 弱电箱 · 基业箱 · 不锈钢箱</p>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon">🧰</div>
+                    <h3>电工辅料</h3>
+                    <p>线管 · 线槽 · 胶带 · 端子 · 扎带</p>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon">🌡️</div>
+                    <h3>仪表仪器</h3>
+                    <p>万用表 · 电笔 · 测温枪 · 钳形表</p>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon">🏭</div>
+                    <h3>工控电气</h3>
+                    <p>接触器 · 继电器 · 变频器 · PLC</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 市场推荐产品 -->
+    <section class="featured">
+        <div class="container">
+            <div class="section-title">
+                <h2>批发市场热门单品</h2>
+                <p>近期批发需求量较高、市场关注度集中的产品</p>
+            </div>
+            <div class="featured-grid">
+                <div class="product-item">
+                    <h3>BVR 国标多股铜芯电线</h3>
+                    <div class="spec">规格：1.5/2.5/4/6/10平方  ·  100米/卷</div>
+                    <div class="ref">🔥 批发关注度高 | 阻燃性能符合国标</div>
+                </div>
+                <div class="product-item">
+                    <h3>正泰/德力西 空气开关</h3>
+                    <div class="spec">1P/2P/3P/4P  ·  6A-125A</div>
+                    <div class="ref">品牌授权渠道 · 支持批量出货</div>
+                </div>
+                <div class="product-item">
+                    <h3>LED 三防吸顶灯</h3>
+                    <div class="spec">18W/24W/36W  ·  6500K白光</div>
+                    <div class="ref">工程装修常用款 · 质保两年</div>
+                </div>
+                <div class="product-item">
+                    <h3>墙壁五孔插座（错位）</h3>
+                    <div class="spec">白色/金色  ·  86型暗装</div>
+                    <div class="ref">多品牌可选 · 批发价低至2.8元/只</div>
+                </div>
+                <div class="product-item">
+                    <h3>PVC 阻燃线管</h3>
+                    <div class="spec">16/20/25/32mm  ·  3米/根</div>
+                    <div class="ref">穿线方便 · 符合建筑防火要求</div>
+                </div>
+                <div class="product-item">
+                    <h3>户内配电箱（强电箱）</h3>
+                    <div class="spec">8-24回路  ·  铁喷塑箱体</div>
+                    <div class="ref">含接地排 · 已预留安装孔</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 采购指南 -->
+    <section class="guide-section">
+        <div class="container guide-layout">
+            <div class="guide-text">
+                <h3>电料批发采购指南</h3>
+                <ul class="guide-list">
+                    <li>明确需求清单：按项目列明所需型号、规格、数量，避免漏采或错采。</li>
+                    <li>认准3C认证：电线电缆、开关插座等产品必须有强制性产品认证标志。</li>
+                    <li>关注铜价走势：电线价格受铜价影响较大，批量采购可关注行情节点。</li>
+                    <li>索要质检报告：正规批发商应能提供产品检测报告与合格证。</li>
+                    <li>确认退换货政策：特别是定制类产品或整箱拆散后的退换规则。</li>
+                    <li>比较运费与起批量：不同市场起批点不同，综合计算到货成本。</li>
+                </ul>
+                <div class="guide-tip">
+                    <strong>💡 经验建议：</strong> 如果是长期采购，建议与2-3家批发商建立稳定合作关系，并定期核对价格与库存信息。对于工程项目，尽量预留3%-5%的损耗余量。
+                </div>
+            </div>
+            <div>
+                <div style="background: white; border-radius: 10px; padding: 20px; box-shadow: 0 3px 10px rgba(0,0,0,0.05);">
+                    <h3 style="margin-bottom: 15px; color: #1b2a41;">批发采购小问答</h3>
+                    <div style="margin-bottom: 15px;">
+                        <strong>Q1: 电料批发一般起批量是多少？</strong>
+                        <p style="color: #5d6d7e; font-size: 14px;">不同产品差异较大。常规电线按卷起批（1卷起），开关插座通常要求整箱或50只以上，断路器一般10只起批。具体以商家政策为准。</p>
+                    </div>
+                    <div style="margin-bottom: 15px;">
+                        <strong>Q2: 如何辨别电线是否为国标足米？</strong>
+                        <p style="color: #5d6d7e; font-size: 14px;">可以看线身喷码是否清晰，用千分尺测量线径，并称重对比。国标BV线每100米重量相对固定，误差过大需谨慎。</p>
+                    </div>
+                    <div>
+                        <strong>Q3: 批发市场与非正规渠道有何区别？</strong>
+                        <p style="color: #5d6d7e; font-size: 14px;">正规批发市场内的商户一般证照齐全，产品来源可追溯，能提供发票和售后服务，品质更有保障。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 市场分布 -->
+    <section class="market-map-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>国内主要电料批发市场分布</h2>
+                <p>以下为部分区域代表性电料批发市场，供实地采购参考</p>
+            </div>
+            <div class="market-grid">
+                <div class="market-region">
+                    <h3>华北地区</h3>
+                    <ul>
+                        <li>北京 · 京开五金建材批发市场</li>
+                        <li>天津 · 华北五金机电市场</li>
+                        <li>石家庄 · 华北灯具城</li>
+                        <li>太原 · 万水机电市场</li>
+                    </ul>
+                </div>
+                <div class="market-region">
+                    <h3>华东地区</h3>
+                    <ul>
+                        <li>上海 · 九星市场（虹梅南路）</li>
+                        <li>杭州 · 杭州五金机电市场</li>
+                        <li>南京 · 金桥装饰城</li>
+                        <li>临沂 · 华强建材市场</li>
+                    </ul>
+                </div>
+                <div class="market-region">
+                    <h3>华南地区</h3>
+                    <ul>
+                        <li>广州 · 天平架装饰材料城</li>
+                        <li>深圳 · 华南城五金区</li>
+                        <li>佛山 · 乐从五金机电市场</li>
+                        <li>南宁 · 虎邱建材市场</li>
+                    </ul>
+                </div>
+                <div class="market-region">
+                    <h3>华中/西南</h3>
+                    <ul>
+                        <li>郑州 · 华南城五金机电</li>
+                        <li>武汉 · 舵落口大市场</li>
+                        <li>成都 · 金府机电城</li>
+                        <li>重庆 · 陈家坪机电市场</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>电料批发常见问题</h2>
+            </div>
+            <div class="faq-list">
+                <div class="faq-item">
+                    <h3>1. 电料批发和零售价格差多少？</h3>
+                    <p>根据产品品类和采购量不同，批发价通常比零售价低10%-30%左右。品牌产品价格透明度较高，杂牌或白牌产品议价空间相对更大。</p>
+                </div>
+                <div class="faq-item">
+                    <h3>2. 如何选择靠谱的电料批发商？</h3>
+                    <p>优先选择经营年限长、证照齐全、有实体店铺的商户。可以查看其代理品牌授权书，并要求提供产品检测报告。另外，观察店铺库存量和出货频率也是判断依据。</p>
+                </div>
+                <div class="faq-item">
+                    <h3>3. 工程项目的电料采购需要注意什么？</h3>
+                    <p>必须严格按照设计图纸和合同要求的品牌、型号采购。所有产品应保留合格证和检测报告，并做好进场验收记录。大批量采购建议分批次送货，便于质量抽检。</p>
+                </div>
+                <div class="faq-item">
+                    <h3>4. 网上电料批发靠谱吗？</h3>
+                    <p>选择正规平台或是有实体市场背景的线上商城相对可靠。下单前确认商家资质、查看用户评价，并索要正规发票。对于金额较大的订单，建议先采购样品验证。</p>
+                </div>
+                <div class="faq-item">
+                    <h3>5. 电料产品有哪些常见认证？</h3>
+                    <p>国内主要看3C认证（强制性产品认证）。出口产品涉及CE、UL、RoHS等认证。断路器、电线电缆、插头插座等均在3C强制认证目录内。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-banner">
+        <div class="container">
+            <h2>需要批量采购电料？获取最新市场报价单</h2>
+            <p>提交您的采购需求，我们将为您匹配适合的批发渠道与参考价格</p>
+            <a href="#" class="cta-btn">立即获取报价</a>
+        </div>
+    </section>
+</main>
+
+<footer class="site-footer">
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-col">
+                <h4>关于平台</h4>
+                <ul>
+                    <li><a href="#">平台介绍</a></li>
+                    <li><a href="#">加入我们</a></li>
+                    <li><a href="#">联系方式</a></li>
+                    <li><a href="#">隐私政策</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>采购服务</h4>
+                <ul>
+                    <li><a href="#">供应商入驻</a></li>
+                    <li><a href="#">批量询价</a></li>
+                    <li><a href="#">物流配送</a></li>
+                    <li><a href="#">售后保障</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>热门品类</h4>
+                <ul>
+                    <li><a href="#">电线电缆批发</a></li>
+                    <li><a href="#">断路器空气开关</a></li>
+                    <li><a href="#">开关插座面板</a></li>
+                    <li><a href="#">LED照明灯具</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>帮助中心</h4>
+                <ul>
+                    <li><a href="#">采购流程</a></li>
+                    <li><a href="#">常见问题</a></li>
+                    <li><a href="#">行业知识</a></li>
+                    <li><a href="#">市场行情</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>© 2024 电料批发市场信息平台 · 本平台提供市场信息与采购参考，具体交易请核实商家资质</p>
+        </div>
+    </div>
+</footer>
+
+</body>
+  </html>
